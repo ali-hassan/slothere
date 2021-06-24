@@ -1,0 +1,90 @@
+@import '../../styles/propertySets.css';
+
+.heading{
+    color:var(--marketplaceColor);
+    margin-bottom: 12px;
+}
+@media screen and (max-width:320px){
+    .heading{
+        color:var(--marketplaceColor);
+        margin-bottom: 12px;
+        padding:0px 24px
+    }
+}
+.title{
+    font-size: 18px;
+}
+.tile{
+float: left;
+width: 50%;
+padding: 0px 10px ;
+}
+@media screen and (max-width:320px){
+    .tile{
+        width: 100%;
+        padding: 10px 10px ;
+        }
+        
+}
+
+.card{
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+
+.cardTitle{
+    color: var(--marketplaceColor);
+    padding-top: 10px;
+}
+
+.cardTitlespan{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.cardContent{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.message{
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+}
+@media screen and (max-width:320px){
+    .message{
+        font-size: 14px;
+        text-align: justify;
+        padding:0px 24px
+    }
+        
+}
+
+.details{
+ 
+    font-size: 14px;
+    font-style: bold;
+    line-height: 2;
+    
+}
+@media screen and (max-width:320px){
+    .details{
+        font-size: 12px;
+        text-align: start;
+        padding:0px 24px;
+        padding-left:auto
+    }
+        
+}
+@media screen and (max-width:320px){
+    .list{
+     
+        padding:0px
+        
+    }
+        
+}

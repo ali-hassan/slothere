@@ -1,0 +1,250 @@
+@import '../../styles/propertySets.css';
+
+/* Can be given to Topbar when a modal is opened
+ * so that the Topbar is not rendered on top of it.*/
+.topbarBehindModal {
+  z-index: initial;
+}
+
+.topbar {
+  @media (--viewportMedium) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* We need to raise Topbar above .container */
+    z-index: 1;
+  }
+}
+
+
+.container {
+  /* Layout */
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+
+  @media (--viewportMedium) {
+    position: relative;
+    padding-top: var(--topbarHeightDesktop);
+    min-height: calc(100vh - var(--topbarHeightDesktop));
+  }
+}
+
+.searchResultContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0 0 0;
+
+  @media (--viewportMedium) {
+    padding: 18px 0 0 0;
+    /**
+     * .container is using flexbox,
+     * This specifies that searchResultContainer is taking 60% from the viewport width
+     */
+    flex-basis: 50%;
+  }
+
+  @media (--viewportLarge) {
+    flex-basis: 62.5%;
+    padding: 23px 0 0 0;
+  }
+}
+
+.error {
+  color: var(--failColor);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.searchString {
+  /* Search string should not break on white spaces - i.e. line-break should happen before. */
+  white-space: nowrap;
+}
+
+.searchFiltersPrimary {
+  display: none;
+
+  @media (--viewportMedium) {
+    display: flex;
+    padding: 0 24px;
+    margin-bottom: 21px;
+  }
+
+  @media (--viewportLarge) {
+    padding: 0 36px;
+  }
+}
+
+.searchFiltersMobile {
+  padding: 16px 24px;
+
+  @media (--viewportMedium) {
+    display: none;
+  }
+}
+
+.searchFiltersPanel {
+  flex-grow: 1;
+  display: flex;
+  padding: 0 24px 24px 24px;
+
+  @media (--viewportLarge) {
+    padding: 0 36px 36px 36px;
+  }
+}
+
+.listings {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.newSearchInProgress {
+  opacity: 0.1;
+}
+
+.searchListingsPanel {
+  flex-grow: 1;
+}
+
+.mapPanel {
+  @media (--viewportMedium) {
+    /**
+     * .container is using flexbox,
+     * This specifies that mapPanel is taking 34% from the viewport width
+     */
+    flex-basis: 50%;
+
+    /* Own layout settings */
+    display: flex;
+    height: 100%;
+  }
+
+  @media (--viewportLarge) {
+    flex-basis: 37.5%;
+  }
+}
+
+.sortBy {
+  margin-right: 9px;
+}
+
+.sortByMenuLabel {
+  @apply --marketplaceButtonStylesSecondary;
+  @apply --marketplaceTinyFontStyles;
+  font-weight: var(--fontWeightMedium);
+
+  height: 35px;
+  min-height: 35px;
+  padding: 0 18px;
+  margin: 0;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+
+  @media (--viewportMedium) {
+    /* Map is fixed so that it doesn't scroll along search results */
+    position: fixed;
+    top: var(--topbarHeightDesktop);
+    right: 0;
+
+    /* Fixed content needs width relative to viewport */
+    width: 50vw;
+    height: calc(100vh - var(--topbarHeightDesktop));
+  }
+
+  @media (--viewportLarge) {
+    width: 37.5vw;
+  }
+}
+
+
+.labelButton {
+  /* Override button styles */
+  outline: none;
+  text-align: left;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.showMapRoot {
+  display: inline-block;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+.showMapLabel {
+  @apply --marketplaceButtonStylesSecondary;
+  @apply --marketplaceSearchFilterLabelFontStyles;
+
+  padding: var(--marketplaceButtonSmallDesktopPadding);
+  width: auto;
+  height: auto;
+  min-height: 0;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    background-color: var(--matterColorLight);
+    border-color: transparent;
+    text-decoration: none;
+    box-shadow: var(--boxShadowFilterButton);
+  }
+}
+
+.showMapSelected {
+  @apply --marketplaceButtonStyles;
+  @apply --marketplaceSearchFilterLabelFontStyles;
+  font-weight: var(--fontWeightSemiBold);
+
+  padding: var(--marketplaceButtonSmallDesktopPadding);
+  width: auto;
+  height: auto;
+  min-height: 0;
+  border-radius: 4px;
+  border: 1px solid var(--marketplaceColor);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--marketplaceColorDark);
+  }
+}
+
+
+.mapIcon {
+  /* Font */
+  @apply --marketplaceTinyFontStyles;
+  font-weight: var(--fontWeightMedium);
+
+  /* background map image */
+  background-image: url(./images/map_icon216x105.png);
+  background-size: cover;
+
+  border-radius: 3px;
+  width: 72px;
+  height: 35px;
+  padding: 9px 22px;
+  margin: 0;
+}
+
+
+.showListingsButton {
+  background-color: var(--marketplaceColor);
+  display: inline-block;
+  border-radius: 3px;
+}

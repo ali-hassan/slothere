@@ -1,0 +1,39 @@
+
+
+
+
+.grid {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 450px !important;
+  min-height: 150px !important;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  transition: var(--transitionStyleButton);
+
+  @media (--viewportMedium) {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    height: calc(0.41 * 100vw);
+    max-height: 56vh;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+
+    &:hover {
+      transform: scale(1.005);
+      box-shadow: var(--boxShadowListingCard);
+    }
+  }
+ 
+}
+
+
