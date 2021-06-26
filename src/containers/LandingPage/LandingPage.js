@@ -7,6 +7,9 @@ import { injectIntl, intlShape } from '../../util/reactIntl';
 import { isScrollingDisabled } from '../../ducks/UI.duck';
 import { propTypes } from '../../util/types';
 import config from '../../config';
+import discoverBlockImg from './DISCOVER-1.png';
+import ctaImg from './CTA.png';
+
 import {
   Page,
   SectionHero,
@@ -69,6 +72,17 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
+          <ul className={css.sections}>
+            <li className={css.section}>
+              <img width={"100%"} src={ctaImg}></img>
+            </li>
+          </ul>
+          <br/>
+          <ul className={css.sections}>
+            <li className={css.section}>
+              <img width={"100%"} src={discoverBlockImg}></img>
+            </li>
+          </ul>
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
