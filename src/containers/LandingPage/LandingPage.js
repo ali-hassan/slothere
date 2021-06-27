@@ -63,7 +63,7 @@ export const LandingPageComponent = props => {
         name: schemaTitle,
         image: [schemaImage],
       }}
-    > 
+    >
       <LayoutSingleColumn>
         <LayoutWrapperTopbar>
           <TopbarContainer />
@@ -72,22 +72,16 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
-          <ul className={css.sections}>
-            <li className={css.section}>
-              <img width={"100%"} src={ctaImg}></img>
-            </li>
-          </ul>
           <br/>
-          <ul className={css.sections}>
-            <li className={css.section}>
-              <img width={"100%"} src={discoverBlockImg}></img>
-            </li>
-          </ul>
+          <br/>
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
               </div>
+            </li>
+            <li className={css.section}>
+              <img width={"100%"} src={discoverBlockImg}></img>
             </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
@@ -97,7 +91,12 @@ export const LandingPageComponent = props => {
                 />
               </div>
             </li>
+            <li className={css.section}>
+              <img width={"100%"} src={ctaImg}></img>
+            </li>
+
           </ul>
+
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />
