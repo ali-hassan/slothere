@@ -8,6 +8,7 @@ import { isScrollingDisabled } from '../../ducks/UI.duck';
 import { propTypes } from '../../util/types';
 import config from '../../config';
 import discoverBlockImg from './DISCOVER-1.png';
+import processImage from './processed.jpeg';
 import ctaImg from './CTA.png';
 
 import {
@@ -82,6 +83,9 @@ export const LandingPageComponent = props => {
             </li>
             <li className={css.section}>
               <img width={"100%"} src={discoverBlockImg}></img>
+            </li>
+            <li className={css.section}>
+              <img width={"100%"} src={processImage}></img>
             </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
