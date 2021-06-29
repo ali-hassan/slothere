@@ -76,15 +76,16 @@ export const LandingPageComponent = props => {
           <br/>
           <br/>
           <ul className={css.sections}>
-            <li className={css.section}>
-              <img width={"100%"} src={processImage}></img>
+            <p style={{ textAlign: 'center', fontSize: "18px" }}>Find the right studio in just 3 easy steps.</p>
+            <li width={"100%"} style={{ textAlign: 'center' }} className={css.section}>
+              <img width={"60%"} src={processImage}></img>
             </li>
 
-            <li className={css.section}>
-              <div className={css.sectionContentFirstChild}>
-                <SectionLocations />
-              </div>
-            </li>
+            {/*<li className={css.section}>*/}
+              {/*<div className={css.sectionContentFirstChild}>*/}
+                {/*<SectionLocations />*/}
+              {/*</div>*/}
+            {/*</li>*/}
             <li className={css.section}>
               <img width={"100%"} src={discoverBlockImg}></img>
             </li>
