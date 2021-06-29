@@ -70,18 +70,16 @@ export const LandingPageComponent = props => {
           <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          <ul className={css.heroContainer}>
-            <li className={css.section}>
-              <img width={"100%"} src={processImage}></img>
-            </li>
-            <br/>
-          </ul>
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
           <br/>
           <br/>
           <ul className={css.sections}>
+            <li className={css.section}>
+              <img width={"100%"} src={processImage}></img>
+            </li>
+
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
