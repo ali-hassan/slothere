@@ -11,6 +11,8 @@ import discoverBlockImg from './DISCOVER-1.png';
 import txtImg from './DISCOVER.png';
 import processImage from './processed.jpeg';
 import ctaImg from './CTA.png';
+import maskGr from './Mask Group.png';
+import partners from './PARTNERS.png';
 
 import {
   Page,
@@ -87,6 +89,12 @@ export const LandingPageComponent = props => {
             <li width={"100%"} style={{ textAlign: 'center' }} className={css.section}>
               <img width={"60%"} src={processImage}></img>
             </li>
+            <br/>
+            <li width={"100%"} style={{ textAlign: 'justify' }} className={css.section}>
+              <img width={"50%"} src={maskGr}></img>
+              <img width={"50%"} src={partners}></img>
+            </li>
+            <br/>
 
             {/*<li className={css.section}>*/}
               {/*<div className={css.sectionContentFirstChild}>*/}
