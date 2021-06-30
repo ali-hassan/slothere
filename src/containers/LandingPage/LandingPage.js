@@ -86,8 +86,8 @@ export const LandingPageComponent = props => {
               <img width={"25%"} src={txtImg}></img>
             </li>
 
-            <li width={"100%"} style={{ textAlign: 'center' }} className={css.section}>
-              <img width={"60%"} src={processImage}></img>
+            <li width={"100%"} style={{ marginLeft: '220px' }} className={css.section}>
+              <img width={"70%"} src={processImage}></img>
             </li>
             <br/>
             <li width={"100%"} style={{ textAlign: 'justify' }} className={css.section}>
