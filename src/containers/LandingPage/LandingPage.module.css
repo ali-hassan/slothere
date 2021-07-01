@@ -114,3 +114,39 @@
     top: calc(-1 * var(--LandingPage_sectionMarginTopLarge));
   }
 }
+
+.mcontent{
+  width: 66%;
+  margin-left: 220px;
+  text-align: left;
+}
+.mcontent_li{
+border: 1px solid;
+}
+.firstli{
+  border: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(202, 21, 115);
+  color: white;
+  line-height: normal;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.secondli{
+  border: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(202, 21, 115);
+  color: white;
+  line-height: normal;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.lastli{
+  border: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(202, 21, 115);
+  color: white;
+  line-height: normal;
+  padding: 5px 10px;
+  font-size: 12px;
+}

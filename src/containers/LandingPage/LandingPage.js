@@ -83,11 +83,32 @@ export const LandingPageComponent = props => {
           <ul className={css.sections}>
             {/*<p style={{ textAlign: 'center', fontSize: "18px" }}>Find the right studio in just 3 easy steps.</p>*/}
             <li width={"100%"} style={{ marginLeft: '220px' }} className={css.section}>
-              <img width={"30%"} src={txtImg}></img>
+              <div className="row" style={{fontSize: "14px"}}>
+                Find the right studio in just 3 easy steps
+              </div>
+              <h2 className="row" style={{fontSize: '32px', fontWeight: "900", color: "#000"}}>
+                How Slot<span style={{color: "#ca1573"}}>in</span> works
+              </h2>
+
+              {/*<img width={"30%"} src={txtImg}></img>*/}
             </li>
             <br/>
 
             <li width={"100%"} style={{ textAlign: 'center' }} className={css.section}>
+              <ul className={css.mcontent}>
+              <li className={css.firstli}>
+                <h4>Discouver studio</h4>
+                <div>Discouver studio in you arrea ath the levish price tag. Discouver studio in you arrea ath the levish price tagvDiscouver studio in you arrea ath the levish price tag</div>
+              </li>
+              <li className={css.secondli}>
+                <h4>Discouver studio</h4>
+                <div>Discouver studio in you arrea ath the levish price tag. Discouver studio in you arrea ath the levish price tagvDiscouver studio in you arrea ath the levish price tag</div>
+              </li>
+              <li className={css.lastli}>
+                <h4>Discouver studio</h4>
+                <div>Discouver studio in you arrea ath the levish price tag. Discouver studio in you arrea ath the levish price tagvDiscouver studio in you arrea ath the levish price tag</div>
+              </li>
+              </ul>
               <img width={"70%"} src={processImage}></img>
             </li>
             <br/>
