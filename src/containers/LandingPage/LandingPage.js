@@ -113,8 +113,9 @@ export const LandingPageComponent = props => {
                 {/*/>*/}
               {/*</div>*/}
             {/*</li>*/}
-            <li className={css.section}>
+            <li className={css.section} style={{position: 'relative'}}>
               <img width={"100%"} src={ctaImg}></img>
+              <a className={css["explore-button"]} href={"google.com"}>Explore Now</a>
             </li>
 
           </ul>

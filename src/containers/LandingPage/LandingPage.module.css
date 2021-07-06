@@ -92,6 +92,20 @@
   margin-top: 3vh;
 }
 
+.explore-button{
+  position: absolute;
+  bottom: 7px;
+  z-index: 10000;
+  right: 20%;
+  padding: 15px 39px;
+  border-radius: 20px;
+  background: #E7097B;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  text-decoration: none !important;
+}
+
 /* A bar on top of light sections */
 .section:nth-of-type(2n) .sectionContent::before {
   background: var(--marketplaceColor);
