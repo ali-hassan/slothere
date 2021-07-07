@@ -16,9 +16,9 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #e9527c;
-  --marketplaceColorLight: #f86094;
-  --marketplaceColorDark: #eb6389;
+  --marketplaceColor: #E7077B;
+  --marketplaceColorLight: #E7077B;
+  --marketplaceColorDark: #E7077B;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %230095b3;
@@ -249,7 +249,7 @@ label {
   margin-bottom: 0;
   font-weight: bold !important;
   padding-left: 19px;
-  
+
 
   @media (--viewportMedium) {
     font-weight: var(--fontWeightSemiBold);
