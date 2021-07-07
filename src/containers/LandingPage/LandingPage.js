@@ -10,7 +10,7 @@ import config from '../../config';
 import discoverBlockImg from './DISCOVER-1.png';
 import txtImg from './DISCOVER.png';
 import processImage from './processed.jpeg';
-import ctaImg from './CTA.png';
+import ctaImg from './cta.png';
 import maskGr from './Mask Group.png';
 import partners from './PARTNERS.png';
 
@@ -115,7 +115,7 @@ export const LandingPageComponent = props => {
             {/*</li>*/}
             <li className={css.section} style={{position: 'relative'}}>
               <img width={"100%"} src={ctaImg}></img>
-              <a className={css["explore-button"]} href={"google.com"}>Explore Now</a>
+              <a className={css["explore-button"]} href={"/s"}>Explore Now</a>
             </li>
 
           </ul>
