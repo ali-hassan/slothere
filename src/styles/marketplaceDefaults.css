@@ -21,7 +21,7 @@
   --marketplaceColorDark: #E7077B;
 
   /* Used with inline CSS SVGs */
-  --marketplaceColorEncoded: %230095b3;
+  --marketplaceColorEncoded: 230095b3;
 
   --successColor: #2ecc71;
   --successColorDark: #239954;
