@@ -10,7 +10,7 @@ import config from '../../config';
 import discoverBlockImg from './DISCOVER-1.png';
 import txtImg from './DISCOVER.png';
 import processImage from './processed.jpeg';
-import ctaImg from './cta.png';
+import ctaImg from './cta_with_out_btn.png';
 import maskGr from './Mask Group.png';
 import partners from './PARTNERS.png';
 
