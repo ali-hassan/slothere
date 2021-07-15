@@ -11,8 +11,7 @@ import discoverBlockImg from './DISCOVER-1.png';
 import txtImg from './DISCOVER.png';
 import processImage from './processed.jpeg';
 import ctaImg from './cta_with_out_btn.png';
-import maskGr from './Mask Group.png';
-import partners from './PARTNERS.png';
+
 
 import {
   Page,
@@ -90,29 +89,10 @@ export const LandingPageComponent = props => {
             <li width={"100%"} style={{ textAlign: 'center' }} className={css.section}>
               <img width={"70%"} src={processImage}></img>
             </li>
-            {/*<br/>*/}
-            {/*<li width={"100%"} style={{ textAlign: 'justify' }} className={css.section}>*/}
-              {/*<img width={"50%"} src={maskGr}></img>*/}
-              {/*<img width={"50%"} src={partners}></img>*/}
-            {/*</li>*/}
+
             <br/>
 
-            {/*<li className={css.section}>*/}
-              {/*<div className={css.sectionContentFirstChild}>*/}
-                {/*<SectionLocations />*/}
-              {/*</div>*/}
-            {/*</li>*/}
-            {/*<li className={css.section}>*/}
-              {/*<img width={"100%"} src={discoverBlockImg}></img>*/}
-            {/*</li>*/}
-            {/*<li className={css.section}>*/}
-              {/*<div className={css.sectionContent}>*/}
-                {/*<SectionHowItWorks*/}
-                  {/*currentUserListing={currentUserListing}*/}
-                  {/*currentUserListingFetched={currentUserListingFetched}*/}
-                {/*/>*/}
-              {/*</div>*/}
-            {/*</li>*/}
+
             <li className={css.section} style={{position: 'relative'}}>
               <img width={"100%"} src={ctaImg}></img>
               <a className={css["explore-button"]} href={"/s"}>Explore Now</a>
